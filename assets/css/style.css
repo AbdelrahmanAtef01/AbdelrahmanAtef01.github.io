@@ -740,7 +740,7 @@ main {
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 5px;
+  scroll-padding-inline: 25px;
 }
 
 .clients-item {
@@ -761,7 +761,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: start;
-  gap: 15px;
+  gap: 5px;
   padding-bottom: 4px;
   padding-left: 7px;
   margin-top: 15px;

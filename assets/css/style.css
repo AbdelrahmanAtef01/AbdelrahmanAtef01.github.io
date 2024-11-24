@@ -732,9 +732,9 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
+  gap: 5px;
   margin: 0 -15px;
-  padding: 0px;
+  padding: 25px;
   padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;

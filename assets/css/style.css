@@ -14,7 +14,6 @@
    */
 
   /* gradient */
-
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(210, 50%, 95%) 3%, 
@@ -47,19 +46,21 @@
   );
 
   /* solid */
-
   --jet: hsl(210, 50%, 80%);
   --onyx: hsl(210, 50%, 90%);
   --eerie-black-1: hsl(210, 50%, 95%);
   --eerie-black-2: hsl(210, 50%, 92%);
-  --smoky-black: hsl(0, 0%, 100%);
-  --white-1: hsl(0, 0%, 100%);
+  --smoky-black: hsl(0, 0%, 100%); /* White background */
+  --white-1: hsl(0, 0%, 100%); /* White used for text changes */
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(210, 60%, 70%);
   --vegas-gold: hsl(210, 40%, 60%);
   --light-gray: hsl(0, 0%, 50%);
   --light-gray-70: hsla(0, 0%, 50%, 0.7);
   --bittersweet-shimmer: hsl(210, 50%, 65%);
+  
+  /* neon blue (for text) */
+  --neon-blue: hsl(190, 100%, 60%); /* Neon Blue text color */
 
   /**
    * typography
@@ -143,11 +144,12 @@ input, textarea {
   color: var(--smoky-black);
 }
 
+
 :focus { outline-color: var(--orange-yellow-crayola); }
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: var(--white-1); }
 
 
 

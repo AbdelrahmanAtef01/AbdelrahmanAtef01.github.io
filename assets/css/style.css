@@ -1043,7 +1043,7 @@ main {
 
 .project-title {
   /* color: var(--white-2); */
-  color: var(--text-gradient-yellow);
+  color: var(--white-2);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -1057,7 +1057,7 @@ main {
 }
 
 .project-description {
-  color: var(--white-2);
+  color: var(--light-gray);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
 

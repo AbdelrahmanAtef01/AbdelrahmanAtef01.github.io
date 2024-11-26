@@ -1071,7 +1071,7 @@ main {
 
 .blog-post-item > a {
   position: relative;
-  background: var(--orange-yellow-crayola);
+  background: var(--onyx);
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;

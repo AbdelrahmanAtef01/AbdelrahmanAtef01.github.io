@@ -1034,7 +1034,6 @@ main {
 .project-description { margin-left: 10px; }
 
 .project-title {
-  /* color: var(--white-2); */
   color: var(--white-1);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
@@ -1072,7 +1071,7 @@ main {
 
 .blog-post-item > a {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--orange-yellow-crayola);
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
@@ -1084,7 +1083,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--eerie-black-1);
+  background: var(--onyx);
   z-index: -1;
 }
 

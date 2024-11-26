@@ -1035,7 +1035,7 @@ main {
 
 .project-title {
   /* color: var(--white-2); */
-  color: var(--bittersweet-shimmer);
+  color: var(--white-1);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -1043,13 +1043,13 @@ main {
 }
 
 .project-category {
-  color: var(--light-gray-70); 
+  color: var(--orange-yellow-crayola); 
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
 }
 
 .project-description {
-  color: var(--light-gray);
+  color: var(--light-gray-70);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
 

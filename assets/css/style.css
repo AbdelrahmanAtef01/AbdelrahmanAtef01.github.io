@@ -504,13 +504,13 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
-.about .about-text p { margin-bottom: 15px; }
+.about-text p { margin-bottom: 15px; }
 
 
 

@@ -152,7 +152,7 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { 
-  background: var(--white-1); /* white background */
+  background: var(--smoky-black); /* black background */
   color: var(--jet); /* dark gray text */
 }
 

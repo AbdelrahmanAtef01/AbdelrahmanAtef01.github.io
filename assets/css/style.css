@@ -3,6 +3,12 @@
 \*-----------------------------------*/
 
 
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
 
 
 /*-----------------------------------*\
@@ -19,49 +25,49 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 100%) 3%, 
-    hsl(0, 0%, 95%) 97%
+    hsl(210, 100%, 75%) 3%, /* light blue */
+    hsl(210, 100%, 85%) 97% /* light blue */
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(200, 100%, 50%, 0.251) 0%, 
-    hsla(200, 100%, 45%, 0) 100%
-  ), hsl(200, 100%, 45%);
+    hsla(210, 100%, 85%, 0.251) 0%, 
+    hsla(210, 100%, 90%, 0) 100%
+  ), hsl(210, 100%, 80%); /* lighter blue background */
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(251, 100%, 65%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(180, 100%, 60%) 0%, /* neon cyan */
+    hsla(180, 100%, 50%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(251, 100%, 65%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(200, 100%, 45%);
+    hsla(180, 100%, 60%, 0.251) 0%, /* neon cyan */
+    hsla(180, 100%, 50%, 0) 59.86%
+  ), hsl(210, 100%, 80%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 90%) 0%, 
-    hsla(0, 0%, 90%, 0) 50%
+    hsl(210, 100%, 75%) 0%, 
+    hsla(210, 100%, 85%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(251, 100%, 65%), 
-    hsl(250, 100%, 65%)
+    hsl(180, 100%, 60%), /* neon cyan */
+    hsl(180, 100%, 50%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 0%); /* Black -> White */
-  --onyx: hsl(0, 0%, 100%); /* Purple -> Neon Blue */
-  --eerie-black-1: hsl(0, 0%, 100%); /* Purple -> Neon Blue */
-  --eerie-black-2: hsl(200, 100%, 45%); /* Purple -> Neon Blue */
-  --smoky-black: hsl(0, 0%, 100%); /* Black -> White */
-  --white-1: hsl(0, 0%, 100%); /* White remains unchanged */
-  --white-2: hsl(0, 0%, 98%); /* White remains unchanged */
-  --orange-yellow-crayola: hsl(251, 100%, 65%);
-  --vegas-gold: hsl(220, 54%, 20%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(249, 57%, 38%);
+  --jet: hsl(210, 100%, 10%); /* deep blue */
+  --onyx: hsl(210, 100%, 20%); /* darker blue */
+  --eerie-black-1: hsl(210, 100%, 15%); /* very dark blue */
+  --eerie-black-2: hsl(210, 100%, 10%); /* deeper dark blue */
+  --smoky-black: hsl(210, 100%, 5%); /* almost black, deep blue */
+  --white-1: hsl(0, 0%, 100%); /* white background */
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(180, 100%, 60%); /* neon cyan */
+  --vegas-gold: hsl(200, 40%, 20%); /* darker gold-blue */
+  --light-gray: hsl(0, 0%, 90%);
+  --light-gray-70: hsla(0, 0%, 90%, 0.7);
+  --bittersweet-shimmer: hsl(210, 80%, 50%); /* bright cyan */
 
   /**
    * typography
@@ -90,11 +96,11 @@
    * shadow
    */
   
-   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.1);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.1);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.15);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.1);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.15);
 
   /**
    * transition
@@ -104,10 +110,6 @@
   --transition-2: 0.5s ease-in-out;
 
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -149,8 +151,18 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { 
+  background: var(--white-1); /* white background */
+  color: var(--jet); /* dark blue text */
+}
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--jet); /* dark blue for headings */
+}
+
+p, a, span, li {
+  color: var(--onyx); /* dark gray-blue for text */
+}
 
 
 

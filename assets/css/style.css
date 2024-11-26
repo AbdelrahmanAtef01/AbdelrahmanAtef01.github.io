@@ -153,15 +153,15 @@ html { font-family: var(--ff-poppins); }
 
 body { 
   background: var(--white-1); /* white background */
-  color: var(--jet); /* dark blue text */
+  color: var(--jet); /* dark gray text */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--jet); /* dark blue for headings */
+  color: var(--jet); /* dark gray for headings */
 }
 
 p, a, span, li {
-  color: var(--onyx); /* dark gray-blue for text */
+  color: var(--onyx); /* darker gray text */
 }
 
 

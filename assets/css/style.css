@@ -836,7 +836,7 @@ main {
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: var(--jet);
+  background: var(--orange-yellow-crayola);
 }
 
 .timeline-item::after {
@@ -846,9 +846,9 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--orange-yellow-crayola);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  box-shadow: 0 0 0 4px var(--orange-yellow-crayola);
 }
 
 .timeline-text {

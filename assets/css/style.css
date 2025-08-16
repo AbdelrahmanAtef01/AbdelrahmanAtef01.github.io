@@ -334,30 +334,42 @@ main {
   border-radius: 20px;
 }
 
+.info-content {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible; /* allow wrapped text to be visible when needed */
+}
+
 .info-content .name {
+  display: block;
   color: var(--white-2);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
   white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: center; 
+  overflow-wrap: anywhere; /* allow breaks anywhere if needed */
+  hyphens: auto;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .info-content .title {
+  display: inline-block;
+  width: 100%;        /* let it fill the available width and wrap */
+  max-width: 100%;
+  box-sizing: border-box;
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
   white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: center; 
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  text-align: center;
 }
 
 .info_more-btn {

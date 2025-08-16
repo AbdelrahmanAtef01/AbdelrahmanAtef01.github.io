@@ -319,6 +319,10 @@ main {
   height: auto;
   overflow: visible;
   transition: var(--transition-2);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 .sidebar.active { max-height: 405px; }
@@ -329,6 +333,9 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  flex: 1 1 auto;
+  min-height: 0;  
+  overflow-y: auto; 
 }
 
 .avatar-box {

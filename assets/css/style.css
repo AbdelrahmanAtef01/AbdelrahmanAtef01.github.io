@@ -314,8 +314,8 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
-  overflow: hidden;
+  max-height: none;         /* allow full height so social icons & contacts appear */
+  overflow: visible;
   transition: var(--transition-2);
 }
 
@@ -324,21 +324,33 @@ main {
 .sidebar-info {
   position: relative;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;    /* stack avatar above name/title */
+  justify-content: center;   /* vertical centering inside the header */
+  align-items: center;       /* horizontal centering */
+  gap: 12px;
+  padding: 16px 8px;         /* optional: give some breathing room */
 }
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 12px;
+  padding: 6px;              /* a little inner spacing */
+}
+.avatar-box img {
+  display: block;
+  width: 100px;              /* pick a size you like */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .info-content {
   width: 100%;
   box-sizing: border-box;
-  overflow: visible; /* allow wrapped text to be visible when needed */
+  text-align: center;
 }
+.info-content .name { margin: 0; }
+.info-content .title { margin: 0; }
 
 .info-content .name {
   display: block;
@@ -405,9 +417,10 @@ main {
 .info_more-btn span { display: none; }
 
 .sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-2);
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  max-height: none !important;
 }
 
 .sidebar.active .sidebar-info_more {
@@ -449,16 +462,19 @@ main {
 
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;  /* center the icons under the card */
   align-items: center;
-  gap: 15px;
-  padding-bottom: 4px;
-  padding-left: 7px;
+  gap: 12px;
+  padding: 8px 0 4px;
+  margin: 0;
+  list-style: none;
 }
 
-.social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
+.social-item .social-link img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 

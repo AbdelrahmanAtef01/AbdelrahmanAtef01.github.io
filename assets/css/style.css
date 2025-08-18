@@ -322,9 +322,10 @@ main {
 .sidebar.active { max-height: 405px; }
 
 .sidebar-info {
+  position: relative;
   display: flex;
-  justify-content: center;  /* center as a group horizontally */
-  align-items: center;      /* center vertically */
+  justify-content: flex-start;
+  align-items: center;
   gap: 15px;
 }
 

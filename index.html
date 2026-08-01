@@ -1,990 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdelrahman Atef — CV Engineer & CTO</title>
-
-  <link rel="shortcut icon" href="./assets/images/letter-a (2).png" type="image/x-icon">
-
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23111'/><text x='4' y='46' font-family='Arial,sans-serif' font-weight='900' font-size='38' fill='white'>AA</text><circle cx='53' cy='44' r='4' fill='%23646cff'/></svg>" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
 
-  <main>
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-name">Abdelrahman Atef</div>
+    <div class="preloader-bar"><div class="preloader-progress" id="preloader-progress"></div></div>
+    <div class="preloader-counter"><span id="preloader-count">0</span>%</div>
+  </div>
+</div>
 
-      <div class="sidebar-top">
-        <figure class="avatar-box">
-          <img src="./assets/images/personal_image.PNG" alt="Abdelrahman Atef" width="80">
-        </figure>
+<!-- NOISE OVERLAY -->
+<svg class="noise" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
 
-        <div class="info-content">
-          <h1 class="name">Abdelrahman Atef</h1>
-          <p class="title-badge">Co-founder & CTO @ ATHLON | Computer Vision Engineer @ EyePro</p>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-brand">AA<span>.</span></a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+  </div>
+  <a href="mailto:abdelrahmanatef508@gmail.com" class="nav-cta" data-magnetic>Contact</a>
+</nav>
+
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-label">
+      <span>CTO @ REE</span>
+      <span class="hero-label-sep">/</span>
+      <span>AI Orchestrator @ Homains</span>
+    </div>
+    <h1 class="hero-name">
+      <div class="name-line"><span>Abdelrahman</span></div>
+      <div class="name-line"><span>Atef<span class="dot">.</span></span></div>
+    </h1>
+    <p class="hero-desc">Startup technical founder building AI-driven products from the ground up — transforming complex data and computer vision into scalable systems that solve real problems.</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary" data-magnetic>View Work</a>
+      <a href="#about" class="btn-ghost" data-magnetic>About Me</a>
+    </div>
+  </div>
+
+  <div class="hero-footer">
+    <div class="hero-socials">
+      <a href="https://github.com/AbdelrahmanAtef01" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.kaggle.com/abdelrahmanatef01" target="_blank" rel="noopener noreferrer" aria-label="Kaggle">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.281.18.046.149.034.238-.046.27l-6.555 6.636 6.921 8.318c.07.095.086.178.046.27z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/abdelrahman-atef-29a448189" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+    <div class="hero-location">Cairo, Egypt</div>
+  </div>
+</section>
+
+
+<!-- ======================== ABOUT ======================== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-label" data-reveal>About</div>
+    <div class="about-grid">
+      <div class="about-photo" data-reveal>
+        <div class="photo-frame">
+          <img src="./assets/images/personal_image.PNG" alt="Abdelrahman Atef">
         </div>
-
-        <button class="sidebar-toggle-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
+        <div class="about-contact-card">
+          <a href="mailto:abdelrahmanatef508@gmail.com">abdelrahmanatef508@gmail.com</a>
+          <a href="tel:+201024546861">+201024546861</a>
+        </div>
       </div>
-
-      <div class="sidebar-details" data-sidebar-details>
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-            </div>
-            <div class="contact-info">
-              <p class="contact-label">Email</p>
-              <a href="mailto:abdelrahmanatef508@gmail.com" class="contact-value">abdelrahmanatef508@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-            </div>
-            <div class="contact-info">
-              <p class="contact-label">Phone</p>
-              <a href="tel:+201024546861" class="contact-value">+201024546861</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div class="contact-info">
-              <p class="contact-label">Location</p>
-              <address class="contact-value">Cairo, Egypt</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li>
-            <a href="https://github.com/AbdelrahmanAtef01" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.kaggle.com/abdelrahmanatef01" class="social-link" title="Kaggle" target="_blank" rel="noopener noreferrer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.281.18.046.149.034.238-.046.27l-6.555 6.636 6.921 8.318c.07.095.086.178.046.27z"/></svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/abdelrahman-atef-29a448189" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </aside>
-
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li><button class="nav-link active" data-nav-link>About</button></li>
-          <li><button class="nav-link" data-nav-link>Resume</button></li>
-          <li><button class="nav-link" data-nav-link>Portfolio</button></li>
-          <li><button class="nav-link" data-nav-link>Certificates</button></li>
-        </ul>
-      </nav>
-
-
-      <!-- ==================== ABOUT ==================== -->
-      <section class="page about active" data-page="about">
-
-        <header class="page-header">
-          <h2 class="page-title">About me</h2>
-        </header>
-
+      <div class="about-content">
+        <h2 class="section-title" data-reveal>Engineer, founder<br>& builder<span class="dot">.</span></h2>
         <div class="about-text">
-          <p>I'm Abdelrahman Atef, a Computer Engineering undergraduate with deep hands-on experience in building intelligent systems, from embedded devices and low-level programming to advanced AI-powered video analytics.</p>
-          <p>I've led and contributed to real-world projects involving computer vision, deep learning, and real-time video understanding. My focus is on designing pipelines that connect sensing, perception and decision making in seamless, efficient ways.</p>
-          <p>What sets my approach apart is the ability to bridge hardware, software and AI in intelligent ways.</p>
-          <p>I'm especially driven by the challenge of building systems that are not just technically sound, but also scalable, practical, and capable of making an impact. I enjoy taking ideas from the earliest prototype to a polished, deployable product.</p>
-          <p>Currently looking to contribute to real-world systems where AI, computer vision or embedded intelligence play a central role.</p>
+          <p data-reveal>I'm Abdelrahman Atef, a startup technical founder and Computer Engineering fresh graduate with a passion for building AI-driven products from the ground up.</p>
+          <p data-reveal>I thrive at the intersection of engineering and business, combining a deep background in computer vision and machine learning with the ability to architect scalable systems and lead developer teams.</p>
+          <p data-reveal>My focus is on transforming complex data and computer vision into scalable, cohesive systems that solve actual user problems, with a strong emphasis on sports tech, intelligent workflows and bringing new platforms to market.</p>
+          <p data-reveal>I've led and contributed to real-world projects involving computer vision, deep learning, real-time video understanding, and physical AI robotics. What sets my approach apart is the ability to bridge hardware, software and AI in intelligent ways.</p>
+          <p data-reveal>I'm especially driven by the challenge of building systems that are not just technically sound, but also scalable, practical, and capable of making an impact. I enjoy taking ideas from the earliest prototype to a polished, deployable product.</p>
         </div>
+      </div>
+    </div>
 
-        <!-- Highlights -->
-        <div class="info-section">
-          <h3 class="section-subtitle">Highlights</h3>
-          <ul class="highlights-list">
-            <li><strong>Specialization:</strong> AI, Computer Vision, Sports Analytics, Data Science and Embedded Systems with production experience in Sports Analytics, AI-driven hardware and real-time computer vision pipelines.</li>
-            <li><strong>Focus:</strong> Designing and delivering smart, end-to-end solutions — from embedded hardware integration to computer vision pipelines and visual analytics.</li>
-            <li><strong>Passion:</strong> Bridging the gap between hardware, AI and business needs to create intelligent systems that perform reliably in real-world conditions.</li>
-            <li><strong>Mindset:</strong> I bring a triple mindset to the table: technical depth, product vision and user focus.</li>
-          </ul>
-        </div>
+    <div class="highlights-grid">
+      <div class="highlight-card" data-reveal>
+        <div class="highlight-label">Specialization</div>
+        <p>AI, Computer Vision, Sports Analytics, Physical AI, Data Science and Embedded Systems with production experience in Sports Tech, AI-driven hardware, autonomous robotics and real-time computer vision pipelines.</p>
+      </div>
+      <div class="highlight-card" data-reveal>
+        <div class="highlight-label">Focus</div>
+        <p>Designing and delivering smart, end-to-end solutions — from embedded hardware integration to computer vision pipelines and visual analytics.</p>
+      </div>
+      <div class="highlight-card" data-reveal>
+        <div class="highlight-label">Passion</div>
+        <p>Bridging the gap between hardware, AI and business needs to create intelligent systems that perform reliably in real-world conditions.</p>
+      </div>
+      <div class="highlight-card" data-reveal>
+        <div class="highlight-label">Mindset</div>
+        <p>I bring a triple mindset to the table: technical depth, product vision and user focus.</p>
+      </div>
+    </div>
 
-        <!-- Currently Learning -->
-        <div class="info-section">
-          <h3 class="section-subtitle">Currently learning</h3>
-          <ul class="highlights-list">
-            <li><strong>Django</strong> — building web backends and admin tools for ML/analytics products.</li>
-            <li><strong>Docker & containerization</strong> — production deployments, reproducible pipelines and CI-friendly images.</li>
-            <li><strong>ROS</strong> — integrating perception and control for robotics and embedded platforms.</li>
-            <li><strong>Linux systems</strong> — server/edge device ops, tuning for low-latency workloads.</li>
-            <li>With continued deepening of <strong>Azure and AWS</strong> for scalable inference and data pipelines.</li>
-          </ul>
-        </div>
+    <div class="learning-section" data-reveal>
+      <h3 class="subsection-title">Currently Exploring</h3>
+      <div class="learning-tags">
+        <span class="tag">Advanced LLM Orchestration</span>
+        <span class="tag">Physical AI & Robotics</span>
+        <span class="tag">Edge Computing</span>
+        <span class="tag">Scalable AI Pipelines</span>
+        <span class="tag">Cloud-Native Architectures</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-        <!-- What I'm Doing -->
-        <div class="info-section">
-          <h3 class="section-subtitle">What I'm doing</h3>
+<!-- ======================== SERVICES ======================== -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="section-label" data-reveal>What I Do</div>
+    <h2 class="section-title" data-reveal>Expertise across the<br>full stack<span class="dot">.</span></h2>
 
-          <div class="services-grid">
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-num">01</div>
+        <img src="./assets/images/computer-vision.png" alt="" class="service-icon">
+        <h3>Computer Vision</h3>
+        <p>Engineering advanced computer vision solutions that understand raw visual inputs, and extract every hidden insight from it. Experienced in developing and optimizing real-time systems for detection, tracking, recognition and visual analytics, with a strong focus on 3 goals: accuracy, time, and seamless deployment in real-world environments.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">02</div>
+        <img src="./assets/images/deep-learning.png" alt="" class="service-icon">
+        <h3>AI Orchestration & Automation</h3>
+        <p>Designing and deploying autonomous AI agents and multi-agent systems for complex business workflows. Experienced with LangChain, LangGraph, Multimodal RAG pipelines and n8n automation — building intelligent systems that operate reliably with zero hallucination and strict adherence to business logic.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">03</div>
+        <img src="./assets/images/deep-learning.png" alt="" class="service-icon">
+        <h3>AI Model Development</h3>
+        <p>Creating, Training and fine-tuning AI models tailored to project goals, whether for Business analysis, prediction or intelligent decision-making. Solutions are optimized for performance and scalability, with deployment processes that ensure they transition smoothly from development to real-world use.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">04</div>
+        <img src="./assets/images/analytics_pie_chart_breakdown_business_data_science_finance_tool_icon_258643.svg" alt="" class="service-icon">
+        <h3>Data Science</h3>
+        <p>Leveraging data to uncover opportunities, optimize processes, and guide strategic decisions. Skilled in uncovering patterns, forecasting outcomes, and supporting data-driven decisions that address real-world challenges with measurable impact.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">05</div>
+        <img src="./assets/images/monitor.png" alt="" class="service-icon">
+        <h3>Data Analysis</h3>
+        <p>Examining complex data sources to reveal trends, patterns, correlations and meaningful insights that drive Business informed decisions. Focused on transforming large volumes of information into clear, informative knowledge that supports product strategic and operational goals.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">06</div>
+        <img src="./assets/images/processor_chip_icon_148734.svg" alt="" class="service-icon">
+        <h3>Embedded Systems & Robotics</h3>
+        <p>Designing and building systems that integrate hardware, software, and AI, ensuring efficient performance in real-time applications. Experienced with ROS 2, RTOS, and distributed computing across Jetson and RPi clusters — enabling autonomous robotic systems, IoT telemetry pipelines and physical AI applications.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">07</div>
+        <img src="./assets/images/circuit-board.png" alt="" class="service-icon">
+        <h3>Hardware Design</h3>
+        <p>Developing robust hardware solutions, from PCB designing to final integrations, tailored to meet the needs of high efficiency and scalable applications. Combining technical precision with practical skills to deliver high-performance systems built for real-world demands.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">08</div>
+        <img src="./assets/images/ui-design.png" alt="" class="service-icon">
+        <h3>Mobile Apps</h3>
+        <p>Architecting and building cross-platform mobile applications with Flutter, delivering smooth performance, responsive interfaces, and engaging user experiences on both Android and iOS. Focused on clean architecture, scalability and bringing ideas to life with precision and style.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/deep-learning.png" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">AI Model Development</h4>
-                <p class="service-desc">Creating, Training and fine-tuning AI models tailored to project goals, whether for Business analysis, prediction or intelligent decision-making. Solutions are optimized for performance and scalability, with deployment processes that ensure they transition smoothly from development to real-world use.</p>
-              </div>
-            </div>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/computer-vision.png" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">Computer Vision</h4>
-                <p class="service-desc">Engineering advanced computer vision solutions that understand raw visual inputs, and extract every hidden insight from it. Experienced in developing and optimizing real-time systems for detection, tracking, recognition and visual analytics, with a strong focus on 3 goals: accuracy, time, and seamless deployment in real-world environments.</p>
-              </div>
-            </div>
+<!-- ======================== TECH STACK ======================== -->
+<section class="section" id="stack">
+  <div class="container">
+    <div class="section-label" data-reveal>Tech Stack</div>
+    <h2 class="section-title" data-reveal>Tools I work with<span class="dot">.</span></h2>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/analytics_pie_chart_breakdown_business_data_science_finance_tool_icon_258643.svg" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">Data Science</h4>
-                <p class="service-desc">Leveraging data to uncover opportunities, optimize processes, and guide strategic decisions. Skilled in uncovering patterns, forecasting outcomes, and supporting data-driven decisions that address real-world challenges with measurable impact.</p>
-              </div>
-            </div>
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">Programming Languages</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/python.png" alt="Python"><span>Python</span></div>
+        <div class="stack-item"><img src="./assets/images/c++.png" alt="C++"><span>C++</span></div>
+        <div class="stack-item"><img src="./assets/images/c.png" alt="C"><span>C</span></div>
+        <div class="stack-item"><img src="./assets/images/dart.png" alt="Dart"><span>Dart</span></div>
+        <div class="stack-item"><img src="./assets/images/java.png" alt="Java"><span>Java</span></div>
+        <div class="stack-item"><img src="./assets/images/mips.png" alt="MIPS"><span>MIPS</span></div>
+        <div class="stack-item"><img src="./assets/images/sql.svg" alt="SQL"><span>SQL</span></div>
+      </div>
+    </div>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/monitor.png" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">Data Analysis</h4>
-                <p class="service-desc">Examining complex data sources to reveal trends, patterns, correlations and meaningful insights that drive Business informed decisions. Focused on transforming large volumes of information into clear, informative knowledge that supports product strategic and operational goals.</p>
-              </div>
-            </div>
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">AI & Computer Vision</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/pytorch.png" alt="PyTorch"><span>PyTorch</span></div>
+        <div class="stack-item"><img src="./assets/images/tensorflow.png" alt="TensorFlow"><span>TensorFlow</span></div>
+        <div class="stack-item"><img src="./assets/images/opencv.png" alt="OpenCV"><span>OpenCV</span></div>
+        <div class="stack-item"><img src="./assets/images/mediapipe.png" alt="MediaPipe"><span>MediaPipe</span></div>
+        <div class="stack-item"><img src="./assets/images/keras.png" alt="Keras"><span>Keras</span></div>
+        <div class="stack-item"><img src="./assets/images/scikitlearn.png" alt="Scikit-learn"><span>Scikit-learn</span></div>
+        <div class="stack-item"><img src="./assets/images/huggingface.png" alt="HuggingFace"><span>HuggingFace</span></div>
+        <div class="stack-item"><img src="./assets/images/mlflow.png" alt="MLflow"><span>MLflow</span></div>
+        <div class="stack-item"><img src="./assets/images/roboflow.png" alt="RoboFlow"><span>RoboFlow</span></div>
+        <div class="stack-item"><img src="./assets/images/cvat.png" alt="CVAT"><span>CVAT</span></div>
+        <div class="stack-item"><img src="./assets/images/langchain.svg" alt="LangChain"><span>LangChain</span></div>
+        <div class="stack-item"><img src="./assets/images/langgraph.svg" alt="LangGraph"><span>LangGraph</span></div>
+        <div class="stack-item"><img src="./assets/images/rag.svg" alt="Multimodal RAG"><span>Multimodal RAG</span></div>
+        <div class="stack-item"><img src="./assets/images/n8n.svg" alt="n8n"><span>n8n</span></div>
+      </div>
+    </div>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/processor_chip_icon_148734.svg" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">Embedded Systems</h4>
-                <p class="service-desc">Designing and building systems that integrate hardware, software, and AI, ensuring efficient performance in real-time applications. Familiar with ROS and RTOS, enabling more versatile and adaptable embedded solutions — whether in automotive, IoT or robotics. Always aiming to bridge innovation with practicality, turning ideas into reliable, working systems.</p>
-              </div>
-            </div>
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">Backend & Databases</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/fastapi.svg" alt="FastAPI"><span>FastAPI</span></div>
+        <div class="stack-item"><img src="./assets/images/flask.svg" alt="Flask"><span>Flask</span></div>
+        <div class="stack-item"><img src="./assets/images/postgresql.png" alt="PostgreSQL"><span>PostgreSQL</span></div>
+        <div class="stack-item"><img src="./assets/images/restapi.svg" alt="REST APIs"><span>REST APIs</span></div>
+      </div>
+    </div>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/circuit-board.png" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">Hardware Design</h4>
-                <p class="service-desc">Developing robust hardware solutions, from PCB designing to final integrations, tailored to meet the needs of high efficiency and scalable applications. Combining technical precision with practical skills to deliver high-performance systems built for real-world demands.</p>
-              </div>
-            </div>
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">Data Science & Analysis</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/powerbi.png" alt="Power BI"><span>Power BI</span></div>
+        <div class="stack-item"><img src="./assets/images/pandas.png" alt="Pandas"><span>Pandas</span></div>
+        <div class="stack-item"><img src="./assets/images/numpy.png" alt="NumPy"><span>NumPy</span></div>
+        <div class="stack-item"><img src="./assets/images/matplotlib.png" alt="Matplotlib"><span>Matplotlib</span></div>
+        <div class="stack-item"><img src="./assets/images/seaborn.png" alt="Seaborn"><span>Seaborn</span></div>
+        <div class="stack-item"><img src="./assets/images/plotly.png" alt="Plotly"><span>Plotly</span></div>
+      </div>
+    </div>
 
-            <div class="service-card">
-              <div class="service-icon">
-                <img src="./assets/images/ui-design.png" alt="" width="40">
-              </div>
-              <div>
-                <h4 class="service-title">Mobile Apps</h4>
-                <p class="service-desc">Architecting and building cross-platform mobile applications with Flutter, delivering smooth performance, responsive interfaces, and engaging user experiences on both Android and iOS. Focused on clean architecture, scalability and bringing ideas to life with precision and style.</p>
-              </div>
-            </div>
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">Cloud & DevOps</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/aws.png" alt="AWS"><span>AWS</span></div>
+        <div class="stack-item"><img src="./assets/images/azure.png" alt="Azure"><span>Azure</span></div>
+        <div class="stack-item"><img src="./assets/images/docker.png" alt="Docker"><span>Docker</span></div>
+        <div class="stack-item"><img src="./assets/images/github.png" alt="GitHub"><span>GitHub</span></div>
+        <div class="stack-item"><img src="./assets/images/git.png" alt="Git"><span>Git</span></div>
+      </div>
+    </div>
 
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">Embedded Systems & Robotics</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/arm.png" alt="ARM"><span>ARM</span></div>
+        <div class="stack-item"><img src="./assets/images/st.png" alt="STM32"><span>STM32</span></div>
+        <div class="stack-item"><img src="./assets/images/atmel.png" alt="Atmel"><span>Atmel</span></div>
+        <div class="stack-item"><img src="./assets/images/freertos.png" alt="FreeRTOS"><span>FreeRTOS</span></div>
+        <div class="stack-item"><img src="./assets/images/raspberrypi.png" alt="RPi"><span>RPi</span></div>
+        <div class="stack-item"><img src="./assets/images/arduino.png" alt="Arduino"><span>Arduino</span></div>
+        <div class="stack-item"><img src="./assets/images/intel.png" alt="Intel"><span>Intel</span></div>
+        <div class="stack-item"><img src="./assets/images/proteus.png" alt="Proteus"><span>Proteus</span></div>
+        <div class="stack-item"><img src="./assets/images/matlab.png" alt="Matlab"><span>Matlab</span></div>
+        <div class="stack-item"><img src="./assets/images/ros2.svg" alt="ROS 2"><span>ROS 2</span></div>
+      </div>
+    </div>
+
+    <div class="stack-category" data-reveal>
+      <h3 class="stack-label">Mobile</h3>
+      <div class="stack-grid">
+        <div class="stack-item"><img src="./assets/images/flutter.png" alt="Flutter"><span>Flutter</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================== EXPERIENCE ======================== -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <div class="section-label" data-reveal>Experience</div>
+    <h2 class="section-title" data-reveal>Where I've<br>made impact<span class="dot">.</span></h2>
+
+    <div class="exp-cards">
+      <div class="exp-card exp-featured" data-reveal>
+        <div class="exp-card-header">
+          <div>
+            <div class="exp-company">REE (500 Global Seed, AUC V-Lab & NBA Africa Accelerated)</div>
+            <div class="exp-role">Chief Technology Officer (CTO)</div>
           </div>
+          <div class="exp-date">Nov 2024 — Present</div>
         </div>
-
-
-        <!-- Tech Stack -->
-        <div class="info-section">
-          <h3 class="section-subtitle">Programming Languages</h3>
-          <div class="tech-grid">
-            <div class="tech-item"><img src="./assets/images/python.png" alt="Python"><span>Python</span></div>
-            <div class="tech-item"><img src="./assets/images/c++.png" alt="C++"><span>C++</span></div>
-            <div class="tech-item"><img src="./assets/images/postgresql.png" alt="PostgreSQL"><span>PostgreSQL</span></div>
-            <div class="tech-item"><img src="./assets/images/c.png" alt="C"><span>C</span></div>
-            <div class="tech-item"><img src="./assets/images/Dart.png" alt="Dart"><span>Dart</span></div>
-            <div class="tech-item"><img src="./assets/images/java.png" alt="Java"><span>Java</span></div>
-            <div class="tech-item"><img src="./assets/images/mips.png" alt="MIPS Assembly"><span>MIPS</span></div>
-          </div>
-        </div>
-
-        <div class="info-section">
-          <h3 class="section-subtitle">Version Control & Cloud Services</h3>
-          <div class="tech-grid">
-            <div class="tech-item"><img src="./assets/images/aws.png" alt="AWS"><span>AWS</span></div>
-            <div class="tech-item"><img src="./assets/images/azure.png" alt="Azure"><span>Azure</span></div>
-            <div class="tech-item"><img src="./assets/images/docker.png" alt="Docker"><span>Docker</span></div>
-            <div class="tech-item"><img src="./assets/images/github.png" alt="GitHub"><span>GitHub</span></div>
-            <div class="tech-item"><img src="./assets/images/git.png" alt="Git"><span>Git</span></div>
-          </div>
-        </div>
-
-        <div class="info-section">
-          <h3 class="section-subtitle">AI & Computer Vision</h3>
-          <div class="tech-grid">
-            <div class="tech-item"><img src="./assets/images/PyTorch.png" alt="PyTorch"><span>PyTorch</span></div>
-            <div class="tech-item"><img src="./assets/images/tensorflow.png" alt="TensorFlow"><span>TensorFlow</span></div>
-            <div class="tech-item"><img src="./assets/images/opencv.png" alt="OpenCV"><span>OpenCV</span></div>
-            <div class="tech-item"><img src="./assets/images/mediapipe.png" alt="MediaPipe"><span>MediaPipe</span></div>
-            <div class="tech-item"><img src="./assets/images/keras.png" alt="Keras"><span>Keras</span></div>
-            <div class="tech-item"><img src="./assets/images/scikitlearn.png" alt="Scikit-learn"><span>Scikit-learn</span></div>
-            <div class="tech-item"><img src="./assets/images/huggingface.png" alt="Hugging Face"><span>HuggingFace</span></div>
-            <div class="tech-item"><img src="./assets/images/mlflow.png" alt="MLflow"><span>MLflow</span></div>
-            <div class="tech-item"><img src="./assets/images/roboflow.png" alt="RoboFlow"><span>RoboFlow</span></div>
-            <div class="tech-item"><img src="./assets/images/cvat.png" alt="CVAT"><span>CVAT</span></div>
-          </div>
-        </div>
-
-        <div class="info-section">
-          <h3 class="section-subtitle">Data Science & Analysis</h3>
-          <div class="tech-grid">
-            <div class="tech-item"><img src="./assets/images/powerbi.png" alt="Power BI"><span>Power BI</span></div>
-            <div class="tech-item"><img src="./assets/images/pandas.png" alt="Pandas"><span>Pandas</span></div>
-            <div class="tech-item"><img src="./assets/images/numpy.png" alt="NumPy"><span>NumPy</span></div>
-            <div class="tech-item"><img src="./assets/images/matplotlib.png" alt="Matplotlib"><span>Matplotlib</span></div>
-            <div class="tech-item"><img src="./assets/images/seaborn.png" alt="Seaborn"><span>Seaborn</span></div>
-            <div class="tech-item"><img src="./assets/images/plotly.png" alt="Plotly"><span>Plotly</span></div>
-          </div>
-        </div>
-
-        <div class="info-section">
-          <h3 class="section-subtitle">Embedded Systems</h3>
-          <div class="tech-grid">
-            <div class="tech-item"><img src="./assets/images/ARM.png" alt="ARM"><span>ARM</span></div>
-            <div class="tech-item"><img src="./assets/images/st.png" alt="STM32"><span>STM32</span></div>
-            <div class="tech-item"><img src="./assets/images/atmel.png" alt="Atmel"><span>Atmel</span></div>
-            <div class="tech-item"><img src="./assets/images/freertos.png" alt="FreeRTOS"><span>FreeRTOS</span></div>
-            <div class="tech-item"><img src="./assets/images/raspberrypi.png" alt="Raspberry Pi"><span>RPi</span></div>
-            <div class="tech-item"><img src="./assets/images/arduino.png" alt="Arduino"><span>Arduino</span></div>
-            <div class="tech-item"><img src="./assets/images/intel.png" alt="Intel"><span>Intel</span></div>
-            <div class="tech-item"><img src="./assets/images/Proteus.png" alt="Proteus"><span>Proteus</span></div>
-            <div class="tech-item"><img src="./assets/images/matlab.png" alt="Matlab"><span>Matlab</span></div>
-          </div>
-        </div>
-
-        <div class="info-section">
-          <h3 class="section-subtitle">Mobile Development</h3>
-          <div class="tech-grid">
-            <div class="tech-item"><img src="./assets/images/flutter.png" alt="Flutter"><span>Flutter</span></div>
-          </div>
-        </div>
-
-      </section>
-
-
-      <!-- ==================== RESUME ==================== -->
-      <section class="page resume" data-page="resume">
-
-        <header class="page-header">
-          <h2 class="page-title">Resume</h2>
-        </header>
-
-        <!-- Experience -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-            <h3>Experience</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">ATHLON — Chief Technology Officer (CTO)</h4>
-              <span class="tl-date">Nov 2024 — Present</span>
-              <p class="tl-text">- Defined the technical vision and led the development of core products in sports video intelligence and analytics.</p>
-              <p class="tl-text">- Architected, implemented and guided the creation of tools for sports video recording, followcam tracking, multi-camera systems, sports tagging and analytics.</p>
-              <p class="tl-text">- Directed the design and implementation of scalable, automated pipelines using Docker, Azure and AWS.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">EyePro — Computer Vision Engineer</h4>
-              <span class="tl-date">Mar 2025 — Present</span>
-              <p class="tl-text">- Architected and developed a real-time, multi-camera VAR system for football to detect fouls, classify their severity and determine appropriate disciplinary actions.</p>
-              <p class="tl-text">- Designed and implemented a real-time alerting system for potential fouls, achieving 91% recall, optimized for multi camera input and low-latency performance.</p>
-              <p class="tl-text">- Built a CNN+LSTM model to filter out false positives in real-time detection, reaching an F1-score of 90.5%.</p>
-              <p class="tl-text">- Developed an MViT-based foul classification model using referee-guided input features, achieving 83% top-1 accuracy and 45% overall accuracy across all foul categories.</p>
-              <p class="tl-text">- Created backend APIs to support the pipeline and deployed the full solution using Docker and AWS services for scalable production use.</p>
-            </li>
-          </ol>
-        </div>
-
-
-        <!-- Internships -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
-            <h3>Internships</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">Digital Egypt Pioneers Initiative (DEPI) — Microsoft Machine Learning Program</h4>
-              <span class="tl-date">Jun 2024 — Nov 2024</span>
-              <p class="tl-text">Ministry of Communication and Information Technology (MCIT) - Global Knowledge</p>
-              <p class="tl-text">- Developed 12 Data science projects, 5 computer vision projects, 3 recommendation systems, and 3 NLP Projects.</p>
-              <p class="tl-text">- Expanded my knowledge of 7 fields: different data preprocessing types, data science, ML, DL, computer vision, recommendation systems, NLP, Microsoft Azure services, and different AI tools.</p>
-              <p class="tl-text">- Applied a 64-feature match analysis project with computer vision and a coaching assistant final project based on DL, LLM and recommendation systems.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Orange Data Center (ODC) — Embedded Systems Program</h4>
-              <span class="tl-date">Oct 2024</span>
-              <p class="tl-text">Orange - Amit</p>
-              <p class="tl-text">- Worked on 6 different Embedded Systems' projects, including AVR, ARM, and RTOS Operating Systems.</p>
-              <p class="tl-text">- Learned about 3 communication protocols, 5 timer types, interrupts, embedded operating systems.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Air Navigation System Administration</h4>
-              <span class="tl-date">Aug 2024 — Sep 2024</span>
-              <p class="tl-text">National Air Navigation Services Company (NANSC)</p>
-              <p class="tl-text">- Acquired the basics of Linux system administration and its use in air navigation systems.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">InnovEgypt Program</h4>
-              <span class="tl-date">Jan 2023</span>
-              <p class="tl-text">ITIDA - TIEC</p>
-              <p class="tl-text">- Gained business development skills including design thinking, different business analysis methods, business planning, problem-solving, and prototyping.</p>
-              <p class="tl-text">- Trained on 3 different on-ground cases, applying all the phases needed to launch a startup.</p>
-            </li>
-          </ol>
-        </div>
-
-
-        <!-- Education -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-            <h3>Education</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">Bachelor of Engineering (BE)</h4>
-              <span class="tl-date">Sep 2021 — Present</span>
-              <p class="tl-text">Benha University - Shoubra Faculty of Engineering - CCEP Department</p>
-            </li>
-          </ol>
-        </div>
-
-
-        <!-- Volunteering -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-            <h3>Volunteering</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">GDG on Campus BUSB Technical Manager</h4>
-              <span class="tl-date">Sep 2024 — Aug 2025</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Co-founder & President — EntrepreNerds</h4>
-              <span class="tl-date">Mar 2022 — Jul 2024</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Organizing Volunteer — Ministry of Education Science Clubs</h4>
-              <span class="tl-date">Jan 2014 — Jan 2018</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Documentary Team Volunteer — Ministry of Irrigation and Water Resources</h4>
-              <span class="tl-date">Jan 2017 — Feb 2017</span>
-            </li>
-          </ol>
-        </div>
-
-
-        <!-- Skills -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <h3>Skills</h3>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill-group">
-              <h4>Programming Languages</h4>
-              <p>Python | C | C++ | PostgreSQL | Dart | Java | MIPS Assembly</p>
-            </div>
-            <div class="skill-group">
-              <h4>Technical Skills</h4>
-              <p>- AI and Machine Learning: OpenCV, PyTorch, TensorFlow, Keras, Mediapipe, Scikit-learn, Hugging Face, MLflow.</p>
-              <p>- Data Analysis and Visualization: Power BI, Pandas, NumPy, Matplotlib, Seaborn, Plotly.</p>
-              <p>- Embedded Systems and IoT: STM32, RTOS, Raspberry PI, Arduino, AVR, Tiva C, 8051, PCB Design.</p>
-              <p>- Mobile Development: Flutter.</p>
-            </div>
-            <div class="skill-group">
-              <h4>Tools</h4>
-              <p>Git | GitHub | Docker | AWS | Azure | Hugging face | CVAT | RoboFlow | Proteus | STM Cube | Matlab</p>
-            </div>
-            <div class="skill-group">
-              <h4>Soft Skills</h4>
-              <p>Team Work | Leadership | Innovation | Business Analysis | Creativity</p>
-            </div>
-            <div class="skill-group">
-              <h4>Languages</h4>
-              <p>Arabic (Native) , English (B1)</p>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Courses -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <h3>Courses</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">The Ultimate Docker Course</h4>
-              <span class="tl-date">Aug 2025</span>
-              <p class="tl-text">Code With Mosh</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Git & Github</h4>
-              <span class="tl-date">Nov 2024</span>
-              <p class="tl-text">Udemy</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Embedded Systems, AVR Diploma</h4>
-              <span class="tl-date">Nov 2023</span>
-              <p class="tl-text">IMT School</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">The Complete Flutter & Dart Development</h4>
-              <span class="tl-date">Jul 2022</span>
-              <p class="tl-text">Udemy</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Raspberry PI</h4>
-              <span class="tl-date">Oct 2016</span>
-              <p class="tl-text">Egy Spark</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Basic Arduino</h4>
-              <span class="tl-date">Sep 2016</span>
-              <p class="tl-text">Egy Spark</p>
-            </li>
-          </ol>
-        </div>
-
-
-        <!-- Projects (in Resume) -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-            <h3>Projects</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">Tactic Zone – Match Analysis & Coach Assistant</h4>
-              <p class="tl-text">Innovated software aimed at improving match preparation. The tools streamline match analysis and coaching by replacing manual work with automation.</p>
-              <p class="tl-text">- AI-Powered Match Analysis: Annotated a new dataset using CVAT and RoboFlow, used YOLOv8X with some integrated modules for detailed feature extraction and strategic insights (28 feature/player) and (36 feature/team).</p>
-              <p class="tl-text">- Smart Recommendations Engine: engineered a recommendation system that analyzes 900+ matches to suggest optimal formations, lineups, and substitutions.</p>
-              <p class="tl-text">- Opponent Analysis: Integrated LLM for detailed match reports and counter-strategies.</p>
-              <p class="tl-text">- Training Session Planning: Used all these outputs to generate tailored sessions based on insights and player needs.</p>
-              <p class="tl-text">- Interactive Chatbot: Integrated this Data and prompt-tuned Gemini LLM for real-time queries and adjustments.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Speaking Glove – Real-Time Sign Language Translator</h4>
-              <p class="tl-text">Developed a solution that integrates embedded systems and AI to translate sign language into text and speech.</p>
-              <p class="tl-text">- Integrated a KNN algorithm for mapping flex and tilt sensor readings to words.</p>
-              <p class="tl-text">- Handled input/output such as tilt and flex sensors, sound modules, LCD, and more.</p>
-              <p class="tl-text">- logic to interpret and reset sentences based on stopping words.</p>
-              <p class="tl-text">- Efficient Scheduling: Managed parallel task scheduling using timers and flags for smooth processing.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Smart Home Temperature Control System</h4>
-              <p class="tl-text">Designed a temperature control system with both manual and automatic modes based on RTOS. The system utilized two AtMega32 microcontrollers connected via SPI protocol.</p>
-              <p class="tl-text">- Control Unit: Handles temperature reading, conversion, threshold selection via keypad, and LCD.</p>
-              <p class="tl-text">- Manual Unit: Controls heater, fan, and manual switches through external interrupts.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Clinic Management System – C and MIPS Assembly Versions</h4>
-              <p class="tl-text">Built a complete software having admin and doctor modes to facilitate reservations and manage patients' records.</p>
-              <p class="tl-text">The project is deployed in C, but I also constructed a MIPS version of it from scratch as training on assembly for future debugging projects.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Already Washed – Flutter App</h4>
-              <p class="tl-text">Applied a mobile app to streamline laundry services, enabling users to manage orders efficiently. Key features included:</p>
-              <p class="tl-text">- User authentication: login, registration, and secure password recovery.</p>
-              <p class="tl-text">- Order Management: real-time tracking, status updates, and order placement.</p>
-              <p class="tl-text">- Membership & Subscription: Manage packages and subscriptions.</p>
-              <p class="tl-text">- UI/UX: Designed user-friendly navigation and intuitive interfaces.</p>
-              <p class="tl-text">- State Management: Used Cubit for predictable state management.</p>
-              <p class="tl-text">- Firebase Integration: Handled data storage, email verification, and notifications for real-time updates.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">HDRNI – Flutter App</h4>
-              <p class="tl-text">A mobile app for automating student attendance, courses' system and grading at Shoubra Faculty of Engineering. Project highlights:</p>
-              <p class="tl-text">- Built a QR-based attendance system with GPS validation to ensure physical presence.</p>
-              <p class="tl-text">- Developed student features: course schedules, exam dates, absence tracking, and grade breakdowns.</p>
-              <p class="tl-text">- Implemented professor tools for QR generation, grading, and absence execuses' review.</p>
-              <p class="tl-text">- Designed a PostgreSQL backend with relational integrity and real-time data access.</p>
-              <p class="tl-text">- Integrated sensors like camera, GPS and QR scanner.</p>
-              <p class="tl-text">- Benchmarked against market tools with academic customization.</p>
-            </li>
-          </ol>
-        </div>
-
-
-        <!-- Achievements -->
-        <div class="resume-block">
-          <div class="block-header">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <h3>Achievements</h3>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <h4 class="tl-title">Entrepreneurs' Society Founders Competition</h4>
-              <span class="tl-date">May 2025</span>
-              <p class="tl-text achievement-highlight">1st place</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">MasterMind Hackathon</h4>
-              <span class="tl-date">Nov 2024</span>
-              <p class="tl-text achievement-highlight">3rd place</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="tl-title">Intel ISEF</h4>
-              <span class="tl-date">Dec 2015</span>
-              <p class="tl-text achievement-highlight">3rd on Egypt</p>
-            </li>
-          </ol>
-        </div>
-
-      </section>
-
-
-      <!-- ==================== PORTFOLIO ==================== -->
-      <section class="page portfolio" data-page="portfolio">
-
-        <header class="page-header">
-          <h2 class="page-title">Portfolio</h2>
-        </header>
-
-        <!-- Desktop filter -->
-        <ul class="filter-list">
-          <li><button class="filter-btn active" data-filter-btn>All</button></li>
-          <li><button class="filter-btn" data-filter-btn>Embedded Systems</button></li>
-          <li><button class="filter-btn" data-filter-btn>Computer Vision</button></li>
-          <li><button class="filter-btn" data-filter-btn>Data Science</button></li>
-          <li><button class="filter-btn" data-filter-btn>Mobile Development</button></li>
-          <li><button class="filter-btn" data-filter-btn>PCB Design</button></li>
+        <ul class="exp-list">
+          <li>Defined the technical and product vision for the REE Padel ecosystem, leading a cross-functional engineering team of 5 in the design and deployment of automated video processing pipelines, sports hardware, camera systems and a 4-application suite.</li>
+          <li>Engineered a padel camera recording system integrated with an on-court physical IoT button network, enabling continuous edge video buffering and instantaneous retroactive highlight capture.</li>
+          <li>Architected and implemented advanced AI and computer vision tools for automated sports analytics, deploying robust pipelines for follow-cam tracking, multi-camera synchronization, extracting sports metrics and real-time athletic tagging, reaching a mAP@50 of no less than 0.85.</li>
+          <li>Drove the product lifecycle from initial architecture to market launch, reaching 2k+ users, 10k+ highlights generated and 15+ courts.</li>
         </ul>
+      </div>
 
-        <!-- Mobile filter -->
-        <div class="filter-select-box">
-          <button class="filter-select" data-select>
-            <span data-select-value>Select category</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <ul class="select-list">
-            <li><button data-select-item>All</button></li>
-            <li><button data-select-item>Embedded Systems</button></li>
-            <li><button data-select-item>Computer Vision</button></li>
-            <li><button data-select-item>Data Science</button></li>
-            <li><button data-select-item>Mobile Development</button></li>
-            <li><button data-select-item>PCB Design</button></li>
-          </ul>
+      <div class="exp-card exp-featured" data-reveal>
+        <div class="exp-card-header">
+          <div>
+            <div class="exp-company">Homains</div>
+            <div class="exp-role">AI Orchestrator</div>
+          </div>
+          <div class="exp-date">Mar 2026 — Present</div>
         </div>
-
-        <ul class="project-list">
-
-          <li class="project-item active" data-filter-item data-category="computer vision">
-            <a href="https://github.com/AbdelrahmanAtef01/Tactic_Zone" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/Tactic Zone.png" alt="Tactic Zone" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Tactic Zone: Match Analysis & Coach Assistant</h3>
-                <p class="project-desc">AI-powered software to streamline match preparation by automating analysis and coaching strategies. It features YOLOv8X for detailed metrics, a recommendation engine for optimizing formations, LLM-driven opponent analysis, tailored training plans, and a real-time interactive chatbot for dynamic insights and adjustments.</p>
-                <span class="project-tag">Computer Vision</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="computer vision">
-            <a href="https://universe.roboflow.com/abdelrahmanatef-kd8yt/ball-analysis-data-all-classes-full-size-with-a-a-trained-model/model/4" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/16.png" alt="Football Dataset" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Football Dataset Annotation</h3>
-                <p class="project-desc">First open-source Football dataset to cover main objects & events on the pitch.</p>
-                <span class="project-tag">Computer Vision</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="computer vision">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/image-aug-classification-models-on-flowers-data" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/17.png" alt="Flower Classification" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Flower Species Classification</h3>
-                <p class="project-desc">6 different flower species data augmentation, processing and applying classification models.</p>
-                <span class="project-tag">Computer Vision</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="embedded systems">
-            <a href="https://github.com/AbdelrahmanAtef01/Speaking_Glove" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/SPEAKING GLOVE PRESENTATION.png" alt="Speaking Glove" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Real-Time Sign Language Translator Glove</h3>
-                <p class="project-desc">This project converts hands' gestures to sound and text, it's build with C programming and based on AVR interfacing. This is achieved by translating sign language into a text sequence, which is displayed on LCD screen, spoken words displayed through an audio module using an AI algorithm (KNN).</p>
-                <span class="project-tag">Embedded Systems</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="embedded systems">
-            <a href="https://github.com/AbdelrahmanAtef01/Temperature-Control-System" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/3.png" alt="Temperature Control System" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Temperature Control System</h3>
-                <p class="project-desc">Developed a temperature control system with manual and automatic modes using RTOS and dual AtMega32 microcontrollers connected via SPI. Features include temperature monitoring, threshold selection via keypad, and LCD display, with manual control of heater and fan through external interrupts.</p>
-                <span class="project-tag">Embedded Systems</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="embedded systems">
-            <a href="https://github.com/AbdelrahmanAtef01/Clinic-management-system" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/Clinic Management System.png" alt="Clinic Management System" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Clinic Management System</h3>
-                <p class="project-desc">A complete software having admin and user modes to facilitate reservations and manage patients records</p>
-                <span class="project-tag">Embedded Systems</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="embedded systems">
-            <a href="https://github.com/AbdelrahmanAtef01/Clinic-management-system-in-Assembly" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/1.png" alt="Clinic System MIPS" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Clinical Management System — MIPS Assembly</h3>
-                <p class="project-desc">Same system as the one made in C, but made with MIPS assembly as a training on instruction sets.</p>
-                <span class="project-tag">Embedded Systems</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="data science">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/most-classification-models-in-one-notebook" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/5.png" alt="Rain Prediction" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Rain Prediction System</h3>
-                <p class="project-desc">Conducted comprehensive data preprocessing and applied various machine learning techniques, including logistic regression, Naive Bayes, decision trees, and random forests. Implemented cross-validation and generated learning curves to evaluate model performance and ensure robust predictions.</p>
-                <span class="project-tag">Data Science</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="data science">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/most-regression-models-on-california-housing" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/7.png" alt="House Prices" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">House Prices Prediction</h3>
-                <p class="project-desc">Executed data preprocessing and applied advanced machine learning algorithms, including linear regression, decision trees, random forests, gradient boosting, and K-Nearest Neighbors (KNN), to develop accurate predictive models for house pricing.</p>
-                <span class="project-tag">Data Science</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="data science">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/fuzzy-c-means-affinity-propagation-on-mall-data" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/9.png" alt="Mall Customers" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Mall Customers Clustering</h3>
-                <p class="project-desc">Utilized fuzzy C-means and affinity propagation algorithms to cluster mall customers based on key features to analyze spending patterns. Enhanced insights through interactive visualizations using PCA for dimensionality reduction and Plotly for interactive data representation.</p>
-                <span class="project-tag">Data Science</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="data science">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/lstm-network-with-milk-production-time-series" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/12.png" alt="Milk Production" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Milk Production Time Series Prediction</h3>
-                <p class="project-desc">A predictive model using LSTM networks to forecast milk production across various times of the year for accurate trend analysis and seasonal insights.</p>
-                <span class="project-tag">Data Science</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="data science">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/overview-director-content-based-movie-recommender" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/13.png" alt="Movie Recommender" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Movie Recommender System</h3>
-                <p class="project-desc">Built content-based and collaborative filtering models utilizing TF-IDF vectorization, ELMO vectorization, sigmoid similarity, cosine similarity, and additional techniques for personalized recommendations.</p>
-                <span class="project-tag">Data Science</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="data science">
-            <a href="https://www.kaggle.com/code/abdelrahmanatef01/most-text-preprocessing-ops-sentiment-analysis" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/14.png" alt="Twitter Sentiment" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Twitter Sentiment Analysis</h3>
-                <p class="project-desc">NLP sentiment analysis project applying: tokenization, stemming, lemmatization, punctuation, special characters and stop words handling, word frequency, bag of words, pos tag, bag of words, TF-IDF and URL handling to preprocess text and apply sentiment analysis.</p>
-                <span class="project-tag">Data Science</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="mobile development">
-            <a href="https://github.com/AbdelrahmanAtef01/Already-Washed-Flutter-App" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/15.png" alt="Already Washed" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Already Washed Mobile APP</h3>
-                <p class="project-desc">Designed a mobile app to streamline laundry services with secure authentication, real-time order tracking, subscription management, and intuitive UI/UX. Utilized Cubit for state management and integrated Firebase for data storage, email verification, and real-time notifications.</p>
-                <span class="project-tag">Mobile Development</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="mobile development">
-            <a href="https://github.com/AbdelrahmanAtef01/hdrny_student_app" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/HDRNI.png" alt="HDRNI" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">HDRNI Mobile APP</h3>
-                <p class="project-desc">Automated student attendance, courses' system and grading at Shoubra Faculty of Engineering by building a QR-based attendance system with GPS validation to ensure physical presence, Student features include: courses and exams' schedules, absence tracking, grade breakdowns and submitting execuses, Implemented professor tools for QR generation, grading and absence execuses' review, Designed a PostgreSQL backend with relational integrity and real-time data access, Integrated sensors like camera, GPS and QR scanner.</p>
-                <span class="project-tag">Mobile Development</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="pcb design">
-            <a href="https://drive.google.com/file/d/1vxDybKhvMeawCYiu6PJAXjVb7xUi1e1z/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/20.png" alt="ADC Circuit" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">ADC Circuit PCB Design</h3>
-                <p class="project-desc">Developed a custom ADC system using LM339N comparators to convert analog sensor readings into digital binary values, utilizing an 8-level voltage reference for precise signal processing. Incorporated a 74148 priority encoder and 7404 inverter to streamline and refine binary signal output. Displayed results on a common anode 7-segment display via a 7447 BCD decoder, delivering efficient and accurate visualization of digital data.</p>
-                <span class="project-tag">PCB Design</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="pcb design">
-            <a href="https://drive.google.com/file/d/1l-SnIxcmN6m-N3ulTfLcu2GFaefZUynq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/19.png" alt="Counter Circuit" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Counter Circuit For Timer Signals & Events</h3>
-                <p class="project-desc">Designed a dual-mode counter system leveraging the NE 555 IC timer to explore logic circuits and hardware connections. Implemented timer-based and event-based modes, enabling one-second interval counting and event-driven increments on a 7-segment display. Integrated hold, reset, and mode-switch buttons for enhanced user interaction and control.</p>
-                <span class="project-tag">PCB Design</span>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item active" data-filter-item data-category="pcb design">
-            <a href="https://drive.google.com/file/d/1uE84rS1T6FKFOFsTVj3aI0izNmH7X5J_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <figure class="project-img">
-                <img src="./assets/images/18.png" alt="Audio Amplifier" loading="lazy">
-                <div class="project-overlay"><span>View Project</span></div>
-              </figure>
-              <div class="project-info">
-                <h3 class="project-title">Audio Amplifier Design</h3>
-                <p class="project-desc">Developed a sound amplifier circuit leveraging an operational amplifier (LM286 IC) for superior performance and signal fidelity. The design included a 10k potentiometer, capacitors (1000uF, 220uF), an input jack, an 8-ohm speaker, and a voltage adaptor for power. The op-amp maintained input voltage equality, ensuring precise output adjustment and high-quality sound amplification.</p>
-                <span class="project-tag">PCB Design</span>
-              </div>
-            </a>
-          </li>
-
+        <ul class="exp-list">
+          <li>Configured and deployed autonomous AI Employees for B2B clients, utilizing the Homains platform to automate complex business operations and client-specific workflows.</li>
+          <li>Managed the lifecycle and performance tuning of active AI agents, refining system prompts, tools, JSON validated schemas and specific contexts to ensure zero hallucination and strict adherence to business logic.</li>
+          <li>Acted as the technical bridge between the core Homains platform and live client deployments, translating abstract business requirements into reliable agent behaviors.</li>
+          <li>Implemented technical flagship enterprise accounts, including Maestro and Eldars, architecting multi-agent solutions to resolve their development and operational bottlenecks.</li>
         </ul>
+      </div>
 
-      </section>
-
-
-      <!-- ==================== CERTIFICATES ==================== -->
-      <section class="page certificates" data-page="certificates">
-
-        <header class="page-header">
-          <h2 class="page-title">Certificates Gallery</h2>
-        </header>
-
-        <ul class="cert-grid">
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/depi.png" alt="DEPI Certificate" loading="lazy"></figure>
-            <p>DEPI Microsoft AI Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/docker_sertificate.png" alt="Docker Certificate" loading="lazy"></figure>
-            <p>Code with Mosh Docker Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/IMT_Certificate.jpg" alt="IMT Certificate" loading="lazy"></figure>
-            <p>IMT Embedded Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Amit_Certificate.jpg" alt="AMIT Certificate" loading="lazy"></figure>
-            <p>AMIT Embedded Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/ODC_Certificate.jpg" alt="ODC Certificate" loading="lazy"></figure>
-            <p>ODC Training Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Git_Certificte.jpg" alt="Git Certificate" loading="lazy"></figure>
-            <p>Git & GitHub Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Flutter_Certificate.png" alt="Flutter Certificate" loading="lazy"></figure>
-            <p>Flutter Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Innov_Certificate.png" alt="InnovEgypt Certificate" loading="lazy"></figure>
-            <p>InnovEgypt Business Training Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/NANSC_Certificate.jpg" alt="NANSC Certificate" loading="lazy"></figure>
-            <p>NANSC Training Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Master_Mind_Hackathon.jpg" alt="MasterMind Hackathon" loading="lazy"></figure>
-            <p>MasterMind Hackathon 3rd Place Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/ISEF_Certificate.png" alt="ISEF Certificate" loading="lazy"></figure>
-            <p>2015 ISEF 3rd place by Intel Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Raspberry_Certificate.png" alt="Raspberry Pi Certificate" loading="lazy"></figure>
-            <p>2016 RaspberryPi Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Arduino_Certificate.png" alt="Arduino Certificate" loading="lazy"></figure>
-            <p>2016 Arduino Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/depi_english_certificate.jpg" alt="DEPI English Certificate" loading="lazy"></figure>
-            <p>DEPI Business English Course Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Water_Resources_Certificate.png" alt="Water Resources Certificate" loading="lazy"></figure>
-            <p>2017 Ministry of Water Resources Volunteer Certificate</p>
-          </li>
-
-          <li class="cert-item">
-            <figure><img src="./assets/images/Science_Club_Certificate.png" alt="Science Club Certificate" loading="lazy"></figure>
-            <p>2018 Ministry of Education Science Clubs Volunteer Certificate</p>
-          </li>
-
+      <div class="exp-card exp-featured" data-reveal>
+        <div class="exp-card-header">
+          <div>
+            <div class="exp-company">ANUBIX — Si-Ware Systems</div>
+            <div class="exp-role">System Architect & Team Leader (Graduation Project)</div>
+          </div>
+          <div class="exp-date">Jan 2026 — Jun 2026</div>
+        </div>
+        <ul class="exp-list">
+          <li>Led multi-domain R&D engineering team to design and build the hardware and software architecture for a fully autonomous agricultural mobile manipulator equipped with NIR spectroscopy technology.</li>
+          <li>Architected the distributed computing infrastructure across a Jetson Orin Nano and Raspberry Pi cluster, orchestrating low-latency execution and communication between the LLM task planner, backend engines, SLAM navigation, computer vision, NIR spectroscopy and robotic arm subsystems.</li>
+          <li>Engineered a scalable cloud-to-edge physical AI pipeline deploying an LLM-driven reasoning engine via AWS, Tailscale VPN and SSH Tunneling.</li>
+          <li>Validated system in TMV-infected greenhouses with Ain Shams University's Faculty of Agriculture, surpassing complex physical test cases with 96% task planning accuracy and 1300ms latency.</li>
+          <li>Delivered the production-ready robotic system and architecture to Si-Ware Systems for further R&D.</li>
         </ul>
+      </div>
 
-      </section>
+      <div class="exp-card exp-featured" data-reveal>
+        <div class="exp-card-header">
+          <div>
+            <div class="exp-company">National Mechanical & Electrical Research Institute</div>
+            <div class="exp-role">AI & Data Engineer (Ministry of Water Resources)</div>
+          </div>
+          <div class="exp-date">Jul 2025 — Dec 2025</div>
+        </div>
+        <ul class="exp-list">
+          <li>Architected IoT telemetry pipelines for national infrastructure, automating real-time data extraction from distributed field sensors and loggers into a scalable backend, utilizing GSM networking and solar power systems.</li>
+          <li>Engineered and deployed predictive deep learning architectures utilizing LSTM networks in an online learning pipeline to forecast regional water levels, reaching an accuracy of 95%.</li>
+          <li>Designed and delivered a comprehensive control dashboard for government officials, integrating live data ingestion and predictive analytics into a unified monitoring interface.</li>
+        </ul>
+      </div>
 
+      <div class="exp-card" data-reveal>
+        <div class="exp-card-header">
+          <div>
+            <div class="exp-company">EyePro</div>
+            <div class="exp-role">Computer Vision Engineer</div>
+          </div>
+          <div class="exp-date">Mar 2025 — Feb 2026</div>
+        </div>
+        <ul class="exp-list">
+          <li>Architected and developed a real-time, multi-camera VAR system for football to detect fouls, classify their severity and determine appropriate disciplinary actions.</li>
+          <li>Designed and implemented a real-time alerting system for potential fouls, achieving 91% recall, optimized for multi-camera input and low-latency performance.</li>
+          <li>Built a CNN+LSTM model to filter out false positives in real-time detection, reaching an F1-score of 90.5%.</li>
+          <li>Developed an MViT-based foul classification model using referee-guided input features, achieving 83% top-1 accuracy and 45% overall accuracy across all foul categories.</li>
+          <li>Created backend APIs to support the pipeline and deployed the full solution using Docker and AWS services for scalable production use.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Resume Tabs -->
+    <div class="resume-tabs">
+      <div class="resume-tab-nav">
+        <button class="resume-tab-btn active" data-resume-tab="internships">Internships</button>
+        <button class="resume-tab-btn" data-resume-tab="education">Education</button>
+        <button class="resume-tab-btn" data-resume-tab="volunteering">Volunteering</button>
+        <button class="resume-tab-btn" data-resume-tab="skills">Skills</button>
+        <button class="resume-tab-btn" data-resume-tab="courses">Courses</button>
+        <button class="resume-tab-btn" data-resume-tab="cv-projects">Projects</button>
+        <button class="resume-tab-btn" data-resume-tab="achievements">Achievements</button>
+      </div>
+
+      <!-- Internships -->
+      <div class="resume-panel active" data-resume-panel="internships">
+        <div class="timeline">
+          <div class="tl-item"><h4>Digital Egypt Pioneers Initiative (DEPI) — Microsoft ML Program</h4><span class="tl-date">Jun 2024 — Nov 2024</span><p>Ministry of Communication and Information Technology (MCIT) - Global Knowledge</p><p>- Developed 12 Data science projects, 5 computer vision projects, 3 recommendation systems, and 3 NLP Projects.</p><p>- Expanded my knowledge of 7 fields: different data preprocessing types, data science, ML, DL, computer vision, recommendation systems, NLP, Microsoft Azure services, and different AI tools.</p><p>- Applied a 64-feature match analysis project with computer vision and a coaching assistant final project based on DL, LLM and recommendation systems.</p></div>
+          <div class="tl-item"><h4>Orange Data Center (ODC) — Embedded Systems Program</h4><span class="tl-date">Oct 2024</span><p>Orange - Amit</p><p>- Worked on 6 different Embedded Systems' projects, including AVR, ARM, and RTOS Operating Systems.</p><p>- Learned about 3 communication protocols, 5 timer types, interrupts, embedded operating systems.</p></div>
+          <div class="tl-item"><h4>Air Navigation System Administration</h4><span class="tl-date">Aug 2024 — Sep 2024</span><p>National Air Navigation Services Company (NANSC)</p><p>- Acquired the basics of Linux system administration and its use in air navigation systems.</p></div>
+          <div class="tl-item"><h4>InnovEgypt Program</h4><span class="tl-date">Jan 2023</span><p>ITIDA - TIEC</p><p>- Gained business development skills including design thinking, different business analysis methods, business planning, problem-solving, and prototyping.</p><p>- Trained on 3 different on-ground cases, applying all the phases needed to launch a startup.</p></div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-panel" data-resume-panel="education">
+        <div class="timeline">
+          <div class="tl-item"><h4>Bachelor of Engineering (BE) in Computer and Communication Engineering</h4><span class="tl-date">Oct 2021 — Jun 2026</span><p>Benha University - Shoubra Faculty of Engineering</p><p>- Cumulative GPA: 3.3</p><p>- Graduation Project: ANUBIX (Autonomous Agritech Robot) — Architected and deployed a spectroscopy-based greenhouse crop inspection system in collaboration with Si-Ware Systems.</p></div>
+        </div>
+      </div>
+
+      <!-- Volunteering -->
+      <div class="resume-panel" data-resume-panel="volunteering">
+        <div class="timeline">
+          <div class="tl-item"><h4>GDG on Campus BUSB Technical Manager</h4><span class="tl-date">Sep 2024 — Aug 2025</span></div>
+          <div class="tl-item"><h4>Co-founder & President — EntrepreNerds</h4><span class="tl-date">Mar 2022 — Jul 2024</span></div>
+          <div class="tl-item"><h4>Organizing Volunteer — Ministry of Education Science Clubs</h4><span class="tl-date">Jan 2014 — Jan 2018</span></div>
+          <div class="tl-item"><h4>Documentary Team Volunteer — Ministry of Irrigation and Water Resources</h4><span class="tl-date">Jan 2017 — Feb 2017</span></div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-panel" data-resume-panel="skills">
+        <div class="skills-block">
+          <div class="skill-row"><h4>Programming Languages</h4><p>Python | C | C++ | Dart | Java | MIPS Assembly | SQL</p></div>
+          <div class="skill-row"><h4>Technical Skills</h4><p>AI, CV, ML and Automation: OpenCV, PyTorch, TensorFlow, Keras, Mediapipe, Scikit-learn, LangChain, LangGraph, Multimodal RAG, Hugging Face, MLflow.<br>Data Analysis and Visualization: Power BI, Pandas, NumPy, Matplotlib, Seaborn, Plotly.<br>Backend and Databases: FastAPI, Flask, PostgreSQL, REST APIs.<br>Embedded Systems and IoT: STM32, ROS 2, RTOS, Raspberry PI, Arduino, AVR, Tiva C, 8051, PCB Design.<br>Mobile Development: Flutter.</p></div>
+          <div class="skill-row"><h4>Tools</h4><p>Git | GitHub | Docker | AWS | Azure | n8n | Hugging Face | CVAT | RoboFlow | Proteus | STM Cube | Matlab</p></div>
+          <div class="skill-row"><h4>Soft Skills</h4><p>Team Work | Leadership | Innovation | Business Analysis | Creativity</p></div>
+          <div class="skill-row"><h4>Languages</h4><p>Arabic (Native), English (B1)</p></div>
+        </div>
+      </div>
+
+      <!-- Courses -->
+      <div class="resume-panel" data-resume-panel="courses">
+        <div class="timeline">
+          <div class="tl-item"><h4>The Ultimate Docker Course</h4><span class="tl-date">Aug 2025</span><p>Code With Mosh</p></div>
+          <div class="tl-item"><h4>Git & Github</h4><span class="tl-date">Nov 2024</span><p>Udemy</p></div>
+          <div class="tl-item"><h4>Embedded Systems, AVR Diploma</h4><span class="tl-date">Nov 2023</span><p>IMT School</p></div>
+          <div class="tl-item"><h4>The Complete Flutter & Dart Development</h4><span class="tl-date">Jul 2022</span><p>Udemy</p></div>
+          <div class="tl-item"><h4>Raspberry PI</h4><span class="tl-date">Oct 2016</span><p>Egy Spark</p></div>
+          <div class="tl-item"><h4>Basic Arduino</h4><span class="tl-date">Sep 2016</span><p>Egy Spark</p></div>
+        </div>
+      </div>
+
+      <!-- CV Projects -->
+      <div class="resume-panel" data-resume-panel="cv-projects">
+        <div class="timeline">
+          <div class="tl-item"><h4>Student Drive MultiModal RAG Assistant</h4><p>Architected an event-driven Multimodal RAG system utilizing a FastAPI Ingestion Engine and an independent Chat Inference Node to transform unstructured academic data (long video lectures, handwritten scribbles, complex PDFs and images) into a highly accurate, citation-backed knowledge base.</p><p>- Engineered a CUDA-optimized ETL worker swarm that extracts text via a hybrid RapidOCR/PaddleOCR stack, refines accuracy using Gemini-2.5 for post-OCR correction, and leverages a Florence-2 VLM and YOLOv8 hybrid for semantic layout analysis and diagram captioning.</p><p>- Processed complex media by transcribing audio via Whisper v3 with speaker diarization and reconstructing visual data grids into LLM-readable Markdowns using Microsoft Table Transformers.</p><p>- Designed the cognitive reasoning core using a LangGraph cyclic state machine for dynamic query routing, generating high-dimensional embeddings and mapping them into ChromaDB to cite answers.</p><p>- Automated the entire ingestion lifecycle utilizing n8n webhooks to instantly synchronize Google Drive uploads with the backend FastAPI inference nodes.</p><p>- Built real-time administrative tools, empowering Teaching Assistants to expand the curriculum with YouTube transcripts and surgically recalculate and update specific vector chunks dynamically through the chat interface.</p></div>
+          <div class="tl-item"><h4>Tactic Zone – Match Analysis & Coach Assistant</h4><p>Innovated software aimed at improving match preparation. The tools streamline match analysis and coaching by replacing manual work with automation.</p><p>- AI-Powered Match Analysis: Annotated a new dataset using CVAT and RoboFlow, used YOLOv8X with some integrated modules for detailed feature extraction and strategic insights (28 feature/player) and (36 feature/team).</p><p>- Smart Recommendations Engine: engineered a recommendation system that analyzes 900+ matches to suggest optimal formations, lineups, and substitutions.</p><p>- Opponent Analysis: Integrated LLM for detailed match reports and counter-strategies.</p><p>- Training Session Planning: Used all these outputs to generate tailored sessions based on insights and player needs.</p><p>- Interactive Chatbot: Integrated this Data and prompt-tuned Gemini LLM for real-time queries and adjustments.</p></div>
+          <div class="tl-item"><h4>Speaking Glove – Real-Time Sign Language Translator</h4><p>Developed a solution that integrates embedded systems and AI to translate sign language into text and speech.</p><p>- Integrated a KNN algorithm for mapping flex and tilt sensor readings to words.</p><p>- Handled input/output such as tilt and flex sensors, sound modules, LCD, and more.</p><p>- logic to interpret and reset sentences based on stopping words.</p><p>- Efficient Scheduling: Managed parallel task scheduling using timers and flags for smooth processing.</p></div>
+          <div class="tl-item"><h4>Smart Home Temperature Control System</h4><p>Designed a temperature control system with both manual and automatic modes based on RTOS. The system utilized two AtMega32 microcontrollers connected via SPI protocol.</p><p>- Control Unit: Handles temperature reading, conversion, threshold selection via keypad, and LCD.</p><p>- Manual Unit: Controls heater, fan, and manual switches through external interrupts.</p></div>
+          <div class="tl-item"><h4>Clinic Management System – C and MIPS Assembly Versions</h4><p>Built a complete software having admin and doctor modes to facilitate reservations and manage patients' records.</p><p>The project is deployed in C, but I also constructed a MIPS version of it from scratch as training on assembly for future debugging projects.</p></div>
+          <div class="tl-item"><h4>Already Washed – Flutter App</h4><p>Applied a mobile app to streamline laundry services, enabling users to manage orders efficiently. Key features included:</p><p>- User authentication: login, registration, and secure password recovery.</p><p>- Order Management: real-time tracking, status updates, and order placement.</p><p>- Membership & Subscription: Manage packages and subscriptions.</p><p>- UI/UX: Designed user-friendly navigation and intuitive interfaces.</p><p>- State Management: Used Cubit for predictable state management.</p><p>- Firebase Integration: Handled data storage, email verification, and notifications for real-time updates.</p></div>
+          <div class="tl-item"><h4>HDRNI – Flutter App</h4><p>A mobile app for automating student attendance, courses' system and grading at Shoubra Faculty of Engineering. Project highlights:</p><p>- Built a QR-based attendance system with GPS validation to ensure physical presence.</p><p>- Developed student features: course schedules, exam dates, absence tracking, and grade breakdowns.</p><p>- Implemented professor tools for QR generation, grading, and absence execuses' review.</p><p>- Designed a PostgreSQL backend with relational integrity and real-time data access.</p><p>- Integrated sensors like camera, GPS and QR scanner.</p><p>- Benchmarked against market tools with academic customization.</p></div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="resume-panel" data-resume-panel="achievements">
+        <div class="achievements-grid">
+          <div class="achievement-card"><div class="ach-place grad">Grad</div><h4>AUC V-Lab Acceleration Program</h4><span>Jan 2026</span></div>
+          <div class="achievement-card"><div class="ach-place">3rd</div><h4>NBA Africa Triple-Double Accelerator</h4><span>Dec 2025</span></div>
+          <div class="achievement-card"><div class="ach-place">1st</div><h4>National Water Research Center AI Competition</h4><span>Nov 2025</span></div>
+          <div class="achievement-card"><div class="ach-place grad">B6</div><h4>500 Global Seed Bootcamp</h4><span>Nov 2025</span></div>
+          <div class="achievement-card"><div class="ach-place">1st</div><h4>Entrepreneurs' Society Founders Competition</h4><span>May 2025</span></div>
+          <div class="achievement-card"><div class="ach-place">3rd</div><h4>MasterMind Hackathon</h4><span>Nov 2024</span></div>
+          <div class="achievement-card"><div class="ach-place">3rd</div><h4>Intel ISEF Egypt</h4><span>Dec 2015</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================== PROJECTS ======================== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-label" data-reveal>Portfolio</div>
+    <h2 class="section-title" data-reveal>Selected personal<br>projects<span class="dot">.</span></h2>
+
+    <div class="filter-bar" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="computer vision">Computer Vision</button>
+      <button class="filter-btn" data-filter="data science">Data Science</button>
+      <button class="filter-btn" data-filter="embedded systems">Embedded Systems</button>
+      <button class="filter-btn" data-filter="mobile development">Mobile Development</button>
+      <button class="filter-btn" data-filter="pcb design">PCB Design</button>
+      <button class="filter-btn" data-filter="agentic">Agentic</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/ANUBIX_JETSON_WS" target="_blank" data-category="agentic"><div class="project-img"><img src="./assets/images/anubix-cover.svg" alt="ANUBIX" loading="lazy"></div><div class="project-info"><span class="project-tag">Agentic</span><h3>ANUBIX — Autonomous Agritech Robot</h3><p>Graduation project with Si-Ware Systems. Fully autonomous agricultural mobile manipulator with NIR spectroscopy, LLM-driven task planning, SLAM navigation and distributed computing across Jetson Orin Nano and RPi cluster. 96% task planning accuracy.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Student-Drive-MultiModal-RAG" target="_blank" data-category="agentic"><div class="project-img"><img src="./assets/images/student-drive-rag.png" alt="Student Drive RAG" loading="lazy"></div><div class="project-info"><span class="project-tag">Agentic</span><h3>Student Drive MultiModal RAG Assistant</h3><p>Event-driven Multimodal RAG system with FastAPI, LangGraph cyclic state machine, CUDA-optimized ETL, Whisper v3 transcription, ChromaDB embeddings and n8n automation — transforming lectures, PDFs and handwritten notes into a citation-backed knowledge base.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Tactic_Zone" target="_blank" data-category="computer vision"><div class="project-img"><img src="./assets/images/Tactic Zone.png" alt="Tactic Zone" loading="lazy"></div><div class="project-info"><span class="project-tag">Computer Vision</span><h3>Tactic Zone: Match Analysis & Coach Assistant</h3><p>AI-powered software to streamline match preparation by automating analysis and coaching strategies. It features YOLOv8X for detailed metrics, a recommendation engine for optimizing formations, LLM-driven opponent analysis, tailored training plans, and a real-time interactive chatbot for dynamic insights and adjustments.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://universe.roboflow.com/abdelrahmanatef-kd8yt/ball-analysis-data-all-classes-full-size-with-a-a-trained-model/model/4" target="_blank" data-category="computer vision"><div class="project-img"><img src="./assets/images/16.png" alt="Football Dataset" loading="lazy"></div><div class="project-info"><span class="project-tag">Computer Vision</span><h3>Football Dataset Annotation</h3><p>First open-source Football dataset to cover main objects & events on the pitch.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/image-aug-classification-models-on-flowers-data" target="_blank" data-category="computer vision"><div class="project-img"><img src="./assets/images/17.png" alt="Flower Classification" loading="lazy"></div><div class="project-info"><span class="project-tag">Computer Vision</span><h3>Flower Species Classification</h3><p>6 different flower species data augmentation, processing and applying classification models.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Speaking_Glove" target="_blank" data-category="embedded systems"><div class="project-img"><img src="./assets/images/SPEAKING GLOVE PRESENTATION.png" alt="Speaking Glove" loading="lazy"></div><div class="project-info"><span class="project-tag">Embedded Systems</span><h3>Real-Time Sign Language Translator Glove</h3><p>This project converts hands' gestures to sound and text, it's build with C programming and based on AVR interfacing. This is achieved by translating sign language into a text sequence, which is displayed on LCD screen, spoken words displayed through an audio module using an AI algorithm (KNN).</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Temperature-Control-System" target="_blank" data-category="embedded systems"><div class="project-img"><img src="./assets/images/3.png" alt="Temperature Control" loading="lazy"></div><div class="project-info"><span class="project-tag">Embedded Systems</span><h3>Temperature Control System</h3><p>Developed a temperature control system with manual and automatic modes using RTOS and dual AtMega32 microcontrollers connected via SPI.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Clinic-management-system" target="_blank" data-category="embedded systems"><div class="project-img"><img src="./assets/images/Clinic Management System.png" alt="Clinic System" loading="lazy"></div><div class="project-info"><span class="project-tag">Embedded Systems</span><h3>Clinic Management System</h3><p>A complete software having admin and user modes to facilitate reservations and manage patients records</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Clinic-management-system-in-Assembly" target="_blank" data-category="embedded systems"><div class="project-img"><img src="./assets/images/1.png" alt="Clinic MIPS" loading="lazy"></div><div class="project-info"><span class="project-tag">Embedded Systems</span><h3>Clinical Management System — MIPS Assembly</h3><p>Same system as the one made in C, but made with MIPS assembly as a training on instruction sets.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/most-classification-models-in-one-notebook" target="_blank" data-category="data science"><div class="project-img"><img src="./assets/images/5.png" alt="Rain Prediction" loading="lazy"></div><div class="project-info"><span class="project-tag">Data Science</span><h3>Rain Prediction System</h3><p>Conducted comprehensive data preprocessing and applied various machine learning techniques, including logistic regression, Naive Bayes, decision trees, and random forests.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/most-regression-models-on-california-housing" target="_blank" data-category="data science"><div class="project-img"><img src="./assets/images/7.png" alt="House Prices" loading="lazy"></div><div class="project-info"><span class="project-tag">Data Science</span><h3>House Prices Prediction</h3><p>Executed data preprocessing and applied advanced ML algorithms including linear regression, decision trees, random forests, gradient boosting, and KNN.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/fuzzy-c-means-affinity-propagation-on-mall-data" target="_blank" data-category="data science"><div class="project-img"><img src="./assets/images/9.png" alt="Mall Clustering" loading="lazy"></div><div class="project-info"><span class="project-tag">Data Science</span><h3>Mall Customers Clustering</h3><p>Utilized fuzzy C-means and affinity propagation algorithms to cluster mall customers based on key features to analyze spending patterns.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/lstm-network-with-milk-production-time-series" target="_blank" data-category="data science"><div class="project-img"><img src="./assets/images/12.png" alt="Milk Production" loading="lazy"></div><div class="project-info"><span class="project-tag">Data Science</span><h3>Milk Production Time Series Prediction</h3><p>A predictive model using LSTM networks to forecast milk production across various times of the year for accurate trend analysis and seasonal insights.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/overview-director-content-based-movie-recommender" target="_blank" data-category="data science"><div class="project-img"><img src="./assets/images/13.png" alt="Movie Recommender" loading="lazy"></div><div class="project-info"><span class="project-tag">Data Science</span><h3>Movie Recommender System</h3><p>Built content-based and collaborative filtering models utilizing TF-IDF, ELMO vectorization, sigmoid similarity, cosine similarity for personalized recommendations.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://www.kaggle.com/code/abdelrahmanatef01/most-text-preprocessing-ops-sentiment-analysis" target="_blank" data-category="data science"><div class="project-img"><img src="./assets/images/14.png" alt="Twitter Sentiment" loading="lazy"></div><div class="project-info"><span class="project-tag">Data Science</span><h3>Twitter Sentiment Analysis</h3><p>NLP sentiment analysis project applying: tokenization, stemming, lemmatization, TF-IDF and more to preprocess text and apply sentiment analysis.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/Already-Washed-Flutter-App" target="_blank" data-category="mobile development"><div class="project-img"><img src="./assets/images/15.png" alt="Already Washed" loading="lazy"></div><div class="project-info"><span class="project-tag">Mobile Development</span><h3>Already Washed Mobile APP</h3><p>Designed a mobile app to streamline laundry services with secure authentication, real-time order tracking, subscription management, and intuitive UI/UX.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://github.com/AbdelrahmanAtef01/hdrny_student_app" target="_blank" data-category="mobile development"><div class="project-img"><img src="./assets/images/HDRNI.png" alt="HDRNI" loading="lazy"></div><div class="project-info"><span class="project-tag">Mobile Development</span><h3>HDRNI Mobile APP</h3><p>Automated student attendance, courses' system and grading at Shoubra Faculty of Engineering using QR-based attendance with GPS validation.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://drive.google.com/file/d/1vxDybKhvMeawCYiu6PJAXjVb7xUi1e1z/view?usp=sharing" target="_blank" data-category="pcb design"><div class="project-img"><img src="./assets/images/20.png" alt="ADC Circuit" loading="lazy"></div><div class="project-info"><span class="project-tag">PCB Design</span><h3>ADC Circuit PCB Design</h3><p>Developed a custom ADC system using LM339N comparators to convert analog sensor readings into digital binary values.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://drive.google.com/file/d/1l-SnIxcmN6m-N3ulTfLcu2GFaefZUynq/view?usp=sharing" target="_blank" data-category="pcb design"><div class="project-img"><img src="./assets/images/19.png" alt="Counter Circuit" loading="lazy"></div><div class="project-info"><span class="project-tag">PCB Design</span><h3>Counter Circuit For Timer Signals & Events</h3><p>Designed a dual-mode counter system leveraging the NE 555 IC timer to explore logic circuits and hardware connections.</p><span class="project-arrow">&rarr;</span></div></a>
+
+      <a class="project-card" href="https://drive.google.com/file/d/1uE84rS1T6FKFOFsTVj3aI0izNmH7X5J_/view?usp=sharing" target="_blank" data-category="pcb design"><div class="project-img"><img src="./assets/images/18.png" alt="Audio Amplifier" loading="lazy"></div><div class="project-info"><span class="project-tag">PCB Design</span><h3>Audio Amplifier Design</h3><p>Developed a sound amplifier circuit leveraging an operational amplifier (LM286 IC) for superior performance and signal fidelity.</p><span class="project-arrow">&rarr;</span></div></a>
 
     </div>
-  </main>
+  </div>
+</section>
 
-  <script src="./assets/js/script.js"></script>
 
+<!-- ======================== CERTIFICATES ======================== -->
+<section class="section section-alt" id="certificates">
+  <div class="container">
+    <div class="section-label" data-reveal>Certificates</div>
+    <h2 class="section-title" data-reveal>Gallery<span class="dot">.</span></h2>
+
+    <div class="cert-grid">
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/depi.png" alt="DEPI" loading="lazy"></figure><p>DEPI Microsoft AI Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/docker_sertificate.png" alt="Docker" loading="lazy"></figure><p>Code with Mosh Docker Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/IMT_Certificate.jpg" alt="IMT" loading="lazy"></figure><p>IMT Embedded Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Amit_Certificate.jpg" alt="AMIT" loading="lazy"></figure><p>AMIT Embedded Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/ODC_Certificate.jpg" alt="ODC" loading="lazy"></figure><p>ODC Training Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Git_Certificte.jpg" alt="Git" loading="lazy"></figure><p>Git & GitHub Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Flutter_Certificate.png" alt="Flutter" loading="lazy"></figure><p>Flutter Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Innov_Certificate.png" alt="InnovEgypt" loading="lazy"></figure><p>InnovEgypt Business Training Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/NANSC_Certificate.jpg" alt="NANSC" loading="lazy"></figure><p>NANSC Training Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Master_Mind_Hackathon.jpg" alt="MasterMind" loading="lazy"></figure><p>MasterMind Hackathon 3rd Place Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/ISEF_Certificate.png" alt="ISEF" loading="lazy"></figure><p>2015 ISEF 3rd place by Intel Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Raspberry_Certificate.png" alt="RPi" loading="lazy"></figure><p>2016 RaspberryPi Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Arduino_Certificate.png" alt="Arduino" loading="lazy"></figure><p>2016 Arduino Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/depi_english_certificate.jpg" alt="DEPI English" loading="lazy"></figure><p>DEPI Business English Course Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Water_Resources_Certificate.png" alt="Water Resources" loading="lazy"></figure><p>2017 Ministry of Water Resources Volunteer Certificate</p></div>
+      <div class="cert-card" data-reveal><figure><img src="./assets/images/Science_Club_Certificate.png" alt="Science Club" loading="lazy"></figure><p>2018 Ministry of Education Science Clubs Volunteer Certificate</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-cta" data-reveal>
+        <h2>Let's work<br>together<span class="dot">.</span></h2>
+      </div>
+      <div class="footer-links" data-reveal>
+        <a href="mailto:abdelrahmanatef508@gmail.com" class="footer-link-big">abdelrahmanatef508@gmail.com</a>
+        <a href="tel:+201024546861" class="footer-link-big">+201024546861</a>
+        <p class="footer-location">Cairo, Egypt</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://github.com/AbdelrahmanAtef01" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.kaggle.com/abdelrahmanatef01" target="_blank" rel="noopener noreferrer">Kaggle</a>
+        <a href="https://www.linkedin.com/in/abdelrahman-atef-29a448189" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Abdelrahman Atef</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>

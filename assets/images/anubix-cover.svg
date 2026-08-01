@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1344 768" width="1344" height="768">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2e1a"/>
+      <stop offset="50%" stop-color="#0d3320"/>
+      <stop offset="100%" stop-color="#041a0d"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="60%" r="35%">
+      <stop offset="0%" stop-color="#16a34a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="1344" height="768" fill="url(#bg)"/>
+  <rect width="1344" height="768" fill="url(#glow1)"/>
+  <rect width="1344" height="768" fill="url(#glow2)"/>
+
+  <!-- Circuit traces -->
+  <g stroke="#22c55e" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M200 200 L400 200 L400 350 L550 350"/>
+    <path d="M800 150 L800 300 L950 300 L950 450"/>
+    <path d="M300 500 L500 500 L500 600 L700 600"/>
+    <path d="M900 550 L1100 550 L1100 400"/>
+    <circle cx="400" cy="200" r="3" fill="#22c55e" fill-opacity="0.15"/>
+    <circle cx="550" cy="350" r="3" fill="#22c55e" fill-opacity="0.15"/>
+    <circle cx="800" cy="300" r="3" fill="#22c55e" fill-opacity="0.15"/>
+    <circle cx="950" cy="450" r="3" fill="#22c55e" fill-opacity="0.15"/>
+    <circle cx="500" cy="500" r="3" fill="#22c55e" fill-opacity="0.15"/>
+    <circle cx="700" cy="600" r="3" fill="#22c55e" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Leaf vein pattern -->
+  <g stroke="#22c55e" stroke-opacity="0.05" stroke-width="0.8" fill="none">
+    <path d="M100 700 Q300 500 350 300 Q380 200 400 100"/>
+    <path d="M100 700 Q250 550 300 400"/>
+    <path d="M100 700 Q200 600 220 500"/>
+    <path d="M1200 50 Q1050 250 1000 400 Q970 500 950 650"/>
+    <path d="M1200 50 Q1100 200 1080 350"/>
+  </g>
+
+  <!-- Robot arm silhouette -->
+  <g transform="translate(950, 250)" stroke="#22c55e" stroke-opacity="0.12" stroke-width="2" fill="none">
+    <path d="M0 0 L40 -60 L100 -40 L130 -80"/>
+    <circle cx="130" cy="-80" r="8"/>
+    <circle cx="0" cy="0" r="5"/>
+    <circle cx="40" cy="-60" r="4"/>
+    <circle cx="100" cy="-40" r="4"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="672" y="340" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="140" fill="white" letter-spacing="-4">ANUBIX</text>
+
+  <!-- Subtitle -->
+  <text x="672" y="420" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="28" fill="#86efac" letter-spacing="8" opacity="0.8">AUTONOMOUS AGRITECH ROBOT</text>
+
+  <!-- Bottom accent line -->
+  <line x1="522" y1="460" x2="822" y2="460" stroke="#22c55e" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Tags -->
+  <text x="672" y="510" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="300" font-size="18" fill="white" opacity="0.4" letter-spacing="3">SI-WARE SYSTEMS  ·  PHYSICAL AI  ·  NIR SPECTROSCOPY</text>
+</svg>
